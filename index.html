@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Weather</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg  bg-danger p-4">
+        <div class="container">
+            <div class="d-flex">
+                <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo"></a>
+                <a class="logo-desc text-decoration-none" href="index.html">
+                    <span>Weather</span>
+                    <p>tagline goes here</p>
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="nav-icon"><i class="fa-solid fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                    <li class="nav-itemm mx-2 position-relative">
+                        <a class="nav-link ss active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item ss mx-2 position-relative">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item ss mx-2 position-relative">
+                        <a class="nav-link" href="#">Live Cameras</a>
+                    </li>
+                    <li class="nav-item ss mx-2 position-relative">
+                        <a class="nav-link" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item mx-2 position-relative">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="back-img">
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md m-auto">
+                <div class="search mt-4 position-relative">
+                    <input type="text" class="form-control find" placeholder="Find your location...">
+                    <button class="position-absolute" type="button">Find</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="weather m-5">
+        <div class="container">
+            <div class="row gx-0">
+                <div class="day1 col-md-4">
+                    <div class="day1-header d-flex justify-content-between px-4 py-1">
+                        <span class="day">Wednesday</span>
+                        <span class="date">15June</span>
+                    </div>
+                    <div class="day1-body p-4">
+                        <div class="d-flex justify-content-around">
+                            <p class="country fw-bolder me-4">Egypt</p>
+                            <p class="city">Cairo</p>
+                        </div>
+                        <div class="d-flex">
+                            <p class="max-degree pe-5">32°C</p>
+                            <div class="weather-icon">
+                                <img src="img/200.png" alt="">
+                            </div>
+                        </div>
+
+
+                        <p class="current-condition">Partly cloudy</p>
+                        <div class="day1-icons d-flex justify-content-around align-items-center">
+                            <div>
+                                <i class="fa-solid fa-umbrella"></i>
+                                <span>20%</span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-wind"></i>
+                                <span>18km/h</span>
+                            </div>
+
+                            <div><i class="fa-solid fa-compass"></i>
+                                <span>East</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="day2 col-md-4">
+                    <div class="day2-header text-center py-1">
+                        <span class="day">Thursday</span>
+                    </div>
+                    <div class="day2-body text-center">
+                        <div class="weather-icon">
+                            <img src="img/200.png" alt="">
+                        </div>
+                        <p class="max-degree">32°C</p>
+                        <p class="min-degree">32°C</p>
+                        <p class="current-condition">Partly cloudy</p>
+                    </div>
+
+                </div>
+                <div class="day3 col-md-4">
+                    <div class="day3-header text-center py-1">
+                        <span class="day">Friday</span>
+                    </div>
+                    <div class="day3-body text-center ">
+                        <div class="weather-icon">
+                            <img src="img/200.png" alt="">
+                        </div>
+                        <p class="max-degree">32°C</p>
+                        <p class="min-degree">32°C</p>
+                        <p class="current-condition">Partly cloudy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="p-5">
+        <div class="container-fluid">
+            <div class="row pt-5">
+                <div class="col-md-7">
+                    <div class="search mb-3 position-relative">
+                        <input type="text" class="form-control" placeholder="Find your location...">
+                        <button class="position-absolute" type="button">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-md-5 text-center">
+                    <div class="icons-list mt-2 d-flex justify-content-center">
+                        <div
+                            class="icon d-flex align-items-center justify-content-center rounded-circle mx-1 bg-dark-blue text-light-blue">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div
+                            class="icon d-flex align-items-center justify-content-center rounded-circle mx-1 text-light-blue">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div
+                            class="icon d-flex align-items-center justify-content-center rounded-circle mx-1 text-light-blue">
+                            <i class="fa-brands fa-google-plus-g"></i>
+                        </div>
+                        <div
+                            class="icon d-flex align-items-center justify-content-center rounded-circle  mx-1 text-light-blue">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="copyright text-center mt-3">Copyright 2022 Wahba. Designed by Themezy. All rights
+                        reserved.</p>
+                    <p class="text-center mt-3">Made with love &#128153</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
