@@ -85,7 +85,7 @@ function setdata(data) {
 	setMinTempC(data.forecast);
 }
 
-(function(){
+(async function(){
 	let apiUrl = `http://api.weatherapi.com/v1/forecast.json?key=e46ca565861a4f12acf122858221606&q=cairo&days=3`;
 	let response = await fetch(apiUrl);
 	let data = await response.json();
